@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: linear-gradient(135deg, #6e45e2, #88d3ce);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #88d3ce;
+}
+
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#home {
+    background: linear-gradient(135deg, #88d3ce, #6e45e2);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.intro p {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+#about {
+    background-color: #fff;
+}
+
+#about h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: #6e45e2;
+}
+
+#about p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+#projects {
+    background-color: #f7f7f7;
+    padding-bottom: 5rem;
+}
+
+#projects h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: #6e45e2;
+}
+
+.project-card {
+    background-color: #fff;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.project-card a {
+    display: inline-block;
+    background: linear-gradient(135deg, #88d3ce, #6e45e2);
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.project-card a:hover {
+    background: linear-gradient(135deg, #6e45e2, #88d3ce);
+}
+
+#contact {
+    background-color: #fff;
+}
+
+#contact h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: #6e45e2;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 1.2rem;
+}
+
+#contact label {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+#contact input, #contact textarea {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+#contact input:focus, #contact textarea:focus {
+    border-color: #6e45e2;
+}
+
+button {
+    background: linear-gradient(135deg, #6e45e2, #88d3ce);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #88d3ce, #6e45e2);
+    transform: translateY(-3px);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro p {
+        font-size: 1.1rem;
+    }
+
+    .project-card {
+        padding: 1.5rem;
+    }
+}
